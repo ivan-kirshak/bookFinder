@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.heading {
+    margin: 16px;
+}
+input[type="text"] {
+    font-weight: 400;
+    font-style: italic;
+    width: 160px;
+    height: 36px;
+}
+.search {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 8px;
+    margin: 10px;
+    color: #ffffff;
+    background-color: rgb(90, 0, 173);
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
