@@ -53,11 +53,17 @@ li {
     flex-grow: 1;
     flex-direction: column;
 }
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
 a, .link, .buylink, .freelink {
     text-decoration: none;
     font-family: var(--font);
     padding: 5px;
     border-radius: 5px;
+    width: 40%;
+    margin: 5px auto;
 }
 .link {
     border: 1px solid rgb(0, 0, 255);
@@ -79,6 +85,9 @@ a, .link, .buylink, .freelink {
         flex-direction: column;
         max-width: 85%;
     }
+    a, .link, .buylink, .freelink {
+        max-width: 80%;
+    }
     h1 {
         font-size: 28px;
     }
@@ -87,5 +96,8 @@ a, .link, .buylink, .freelink {
     }
     h3 {
         font-size: 18px;
+    }
+    .buttons {
+        flex-direction: column;
     }
 }
