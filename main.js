@@ -22,7 +22,7 @@ function lookForBook() {
                     <h1 class="mobheading">${result.items[i].volumeInfo.title}</h1>
                     <h2 class="subheading">by ${result.items[i].volumeInfo.authors}</h2>
                     <p class="description"><i>${result.items[i].volumeInfo.description}</i></p>
-                    <a href="${result.items[i].accessInfo.webReaderLink}" target="_blank" class="link">view sample > </a>
+                    <a href="${result.items[i].accessInfo.webReaderLink}" target="_blank" class="link">view sample</a>
                     </div>
                     </div>`;
                     } else if (result.items[i].saleInfo.saleability === "FOR_SALE") {
@@ -33,10 +33,10 @@ function lookForBook() {
                     <h2 class="subheading">by ${result.items[i].volumeInfo.authors}</h2>
                     <p class="description"><i>${result.items[i].volumeInfo.description}</i></p>
                     <div class="buttons">
-                    <a href="${result.items[i].accessInfo.webReaderLink}" target="_blank" class="link">view sample > </a>
+                    <a href="${result.items[i].accessInfo.webReaderLink}" target="_blank" class="link">view sample</a>
                     <a href="${result.items[i].saleInfo.buyLink}" target="_blank" class="buylink">buy 
                     (from ${result.items[i].saleInfo.listPrice.amount}
-                    ${result.items[i].saleInfo.listPrice.currencyCode}) > </a>
+                    ${result.items[i].saleInfo.listPrice.currencyCode})</a>
                     </div>
                     </div>
                     </div>`;
@@ -48,8 +48,8 @@ function lookForBook() {
                     <h2 class="subheading">by ${result.items[i].volumeInfo.authors}</h2>
                     <p class="description"><i>${result.items[i].volumeInfo.description}</i></p>
                     <div class="buttons">
-                    <a href="${result.items[i].accessInfo.webReaderLink}" target="_blank" class="link">view sample > </a>
-                    <a href="${result.items[i].saleInfo.buyLink}" target="_blank" class="freelink">get free eBook > </a>
+                    <a href="${result.items[i].accessInfo.webReaderLink}" target="_blank" class="link">view sample</a>
+                    <a href="${result.items[i].saleInfo.buyLink}" target="_blank" class="freelink">get free eBook</a>
                     </div>
                     </div>
                     </div>`;
