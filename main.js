@@ -63,10 +63,3 @@ function lookForBook() {
     }
 }
 searchBtn.addEventListener("click", lookForBook, false);
-
-// Currently figuring out, how to handle presence / absence of these items, so you can view (or not) 
-// possibility to buy a chosen book
-{/* <a href="${result.items[i].accessInfo.webReaderLink}" class="link">view sample > </a>
-<a href="${result.items[i].saleInfo.buyLink}" class="buylink">buy 
-(from ${result.items[i].saleInfo.listPrice.amount}
-    ${result.items[i].saleInfo.listPrice.currencyCode}) > </a> */}
