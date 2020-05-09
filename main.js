@@ -65,6 +65,7 @@ function lookForBook() {
         fetch(`https://www.googleapis.com/books/v1/volumes?q=${bookName.value}`)
             .then(response => { return response.json() })
             .then(data => {
+                bookFind.innerHTML = '';
                 for (let i = 0; i < data.items.length; i++) {
                     let item = document.createElement("li");
                     if (data.items[i].saleInfo.saleability === "NOT_FOR_SALE") {
